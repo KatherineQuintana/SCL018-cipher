@@ -6,9 +6,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div id="root">
-      <h1>Hello world!</h1>
+      <div class="texto">
+      <h1>CÓDIGO SECRETO</h1>
+      <ul> 
+        <li>¿Necesitas organizar una fiesta sorpresa?</li>
+        <li>¿Deseas enviar un mensaje, pero no quieres que otros lo descubran? </li>
+        <li>¿Estas aburrido de que siempre estén revisando lo que escribes? </li>
+        <li>Para esto y muchas cosas más, te presento código secreto. </li>
+        <li>La única forma para saber lo que escribes es con tu clave de acceso</li> 
+      </ul>
     </div>
+    
+    <form>
+      <p>"CÓDIFICA TU MENSAJE"</p>
+      <input type="image" src="image/Azul.png" class="carp" id="encode">
+      <p>"DECODIFICA TU MENSAJE"</p>
+      <input type="image" src="image\roja.png" class="carp" id="decode">
+    </form>
+
+    <footer>
+      "¡Por y para ustedes Hitomi Ritzuko!"
+    </footer>
+    <video src="video/matrix.mp4" autoplay muted loop>
+    </video>
+
+    </div>
+
+    <section class="pageTwo" id="pageTwo">
+      <h1>CODIFICA TU MENSAJE</h1>
+      <p>Por favor no considerar letra "Ñ"</p>
+      
+      <p>Contraseña numerica</p>
+      <input type="number" id="password" class="password">
+      <p>Ingresa tu texto</p>
+      <textarea class="write" id="write" cols="55" rows="10" maxlength="150" minlength="3">
+      </textarea>
+      <input type="submit" id="send" name="send">
+      <textarea class="result" readonly id="result" cols="55" rows="10" maxlength="200" minlength="3">
+      </textarea>  
+
+      <figure>
+        <img class= "home" src="image\home.png" id="returnHome"/>
+        <img class="clean" src="image/limpiar.png" id="clean"/>
+      </figure>
+
+    </section>
+
+    <section class="pageThree" id="pageThree">
+      <h1>DECODIFICA TU MENSAJE</h1>
+    
+      <p>Contraseña</p>
+      <input type="number" id="passwordDos" class="password">
+      <p>Ingresa tu texto</p>
+      <textarea class="write" id="writeDos" cols="55" rows="10" maxlength="150"></textarea>
+      <input type="submit" id="sendDos" name="send2"/>
+      <textarea class="result" readonly id="resultDos" cols="55" rows="10" maxlength="200" minlength="3">
+      </textarea>  
+      
+      <figure>
+        <img class="home" src="image\home.png" id="pageRoot"/>
+        <img class="clean" src="image/limpiar.png" id="cleanDos"/>
+      </figure>
+  
+    </section>
+
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
